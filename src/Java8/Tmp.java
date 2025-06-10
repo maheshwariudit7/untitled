@@ -1,5 +1,6 @@
 package Java8;
 
+import java.lang.reflect.Constructor;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
@@ -27,14 +28,22 @@ public class Tmp {
 //            System.out.println(iter.next());
 //        }
 
-        CopyOnWriteArrayList<String> c = new CopyOnWriteArrayList<>();
-        c.add("hello");
-        c.add("world");
+//        CopyOnWriteArrayList<String> c = new CopyOnWriteArrayList<>();
+//        c.add("hello");
+//        c.add("world");
+//
+//        for(String a: c){
+//            if(a.equals("world"))
+//                c.remove(a);
+//            System.out.println(a);
+//        }
 
-        for(String a: c){
-            if(a.equals("world"))
-                c.remove(a);
-            System.out.println(a);
+
+        try {
+            Tmp tmp = Tmp.class.getDeclaredConstructor().newInstance();
+
+        }catch (NoSuchMethodException nsmfe){
+            nsmfe.printStackTrace();
         }
 
 
