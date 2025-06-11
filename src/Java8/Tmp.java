@@ -39,12 +39,12 @@ public class Tmp {
 //        }
 
 
-        try {
-            Tmp tmp = Tmp.class.getDeclaredConstructor().newInstance();
-
-        }catch (NoSuchMethodException nsmfe){
-            nsmfe.printStackTrace();
-        }
+//        try {
+////            Tmp tmp = Tmp.class.getDeclaredConstructor().newInstance();
+//
+//        }catch (NoSuchMethodException nsmfe){
+//            nsmfe.printStackTrace();
+//        }
 
 
 
